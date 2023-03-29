@@ -1,4 +1,5 @@
 @import "nav.css";
+@import "hero.css";
 
 :root {
     --gray-100: #f3f4f6;
@@ -6,14 +7,19 @@
     --gray-400: #9ca3af;
     --gray-600: #52525B;
     --gray-900: #141624;
+    --primary-100: #4B6BFB;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Work sans", 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     margin: 0 auto;
     padding: 0;
     width: 90vw;
+}
+
+.welcome {
+    text-align: center;
 }
