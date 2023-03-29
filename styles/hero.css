@@ -1,13 +1,14 @@
 @import "./main.css";
 
 .hero {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 12px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .hero::before {    
@@ -67,6 +68,7 @@
 @media  screen and (max-width: 768px) {
     .hero {
         height: 50vh;
+        margin-left: 30px;
     }
 }
     
