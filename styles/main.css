@@ -1,0 +1,19 @@
+@import "nav.css";
+
+:root {
+    --gray-100: #f3f4f6;
+    --gray-300: #e5e7eb;
+    --gray-400: #9ca3af;
+    --gray-600: #52525B;
+    --gray-900: #141624;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0;
+    width: 90vw;
+}

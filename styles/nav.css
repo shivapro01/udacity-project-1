@@ -1,0 +1,56 @@
+@import "./main.css";
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 3rem;
+    color: var(--gray-600);
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    color: var(--gray-900);
+    box-shadow: inset 0 -1px 0 0 var(--gray-600);; 
+}
+
+.nav-search {
+    background-color: var(--gray-300);
+    border: none;
+    border-radius: 10px;
+    padding: 4px 5px;
+}
+
+.nav-search:focus {
+    outline: none;
+}
+
+.nav-search::placeholder {
+    color: var(--gray-600);
+}
