@@ -9,7 +9,7 @@
     gap: 1rem;
     margin: 0 auto;
     padding: 0;
-    width: 90vw;
+    width: 80vw;
 }
 
 .card {
@@ -25,7 +25,7 @@
 
 .card-img {
     width: 450px;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: 12px;
     margin-top: 1rem;
@@ -102,7 +102,70 @@
     color: var(--gray-100);
 }
 
-@media screen and (max-width: 768px) {
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        height: 460px;
+    }
+
+    .card-heading {
+        font-size: 0.8rem;
+    }
+
+    .card-category {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.6em;
+    }
+
+    .card-author-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        height: 500px;
+    }
+
+    .card-heading {
+        font-size: 0.8rem;
+    }
+
+    .card-category {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.6em;
+    }
+
+    .card-author-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
     .cards {
         flex-direction: column;
     }
@@ -126,4 +189,24 @@
         height: 30px;
         font-size: 0.7rem;
     }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+
+    .card-heading {
+        font-size: 0.8rem;
+        margin: 2rem auto;
+    }
+
+    .card-details {
+        font-size: 0.7rem;
+    }
+
+    .card-btn {
+        width: 70px;
+        height: 30px;
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
 }

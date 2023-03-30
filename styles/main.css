@@ -28,3 +28,42 @@ body {
 .welcome {
     text-align: center;
 }
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90vw;
+    height: 54vh;
+}
+
+.about-img {
+    width: 40%;
+    height: 40vh;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.about-info {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 40vh;
+        margin-top: 2rem;
+    }
+    
+    .about-info {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
