@@ -44,9 +44,9 @@ nav ul li:hover {
 }
 
 .nav-search {
-    background-color: var(--gray-300);
+    background-color: var(--gray-200);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 4px 5px;
 }
 

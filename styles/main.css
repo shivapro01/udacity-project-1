@@ -2,6 +2,7 @@
 @import "hero.css";
 @import "card.css";
 @import "footer.css";
+@import "blog.css";
 
 :root {
     --gray-100: #f3f4f6;
