@@ -8,10 +8,11 @@
     flex-direction: column;
     border-radius: 12px;
     position: relative;
-    margin-bottom: 40px;
+    margin: 40px auto;
+    width: 90vw;
 }
 
-.hero::before {    
+.hero::before {
     content: "";
     background-image: url("../assets/hero.jpg");
     background-size: cover;
@@ -65,14 +66,14 @@
     margin-right: 0.5rem;
 }
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero {
         height: 50vh;
         margin-left: 30px;
     }
 }
-    
-@media  screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
     .hero {
         height: 40vh;
     }

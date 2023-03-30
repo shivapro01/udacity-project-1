@@ -1,0 +1,220 @@
+@import "main.css";
+
+
+.footer-container {
+    background-color: var(--gray-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-item1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.footer-about {
+    width: 30vw;
+}
+
+.footer-about p:nth-child(2) {
+    color: var(--gray-600);
+}
+
+.footer-links {
+    display: flex;
+    padding: 0;
+    width: 30vw;
+    gap: 3rem;
+}
+
+.footer-quicklinks,
+.footer-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-quicklinks li,
+.footer-category li {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.footer-quicklinks li a,
+.footer-category li a {
+    text-decoration: none;
+    color: var(--gray-600);
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-quicklinks li a:hover,
+.footer-category li a:hover {
+    color: var(--secondary-100);
+}
+
+.footer-webletter {
+    background-color: var(--white);
+    padding: 1rem;
+    height: 90%;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.footer-webletter h3 {
+    color: var(--gray-900);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer-webletter p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer-webletter input {
+    background-color: var(--gray-200);
+    border: none;
+    border-radius: 10px;
+    padding: 4px 5px;
+    width: 100%;
+}
+
+.footer-webletter input:focus {
+    outline: none;
+}
+
+.footer-webletter input::placeholder {
+    color: var(--gray-600);
+}
+
+.footer-webletter button {
+    background-color: var(--primary-100);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 4px 5px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footer-webletter button:hover {
+    background-color: var(--secondary-100);
+}
+
+.footer-item2 {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-copyright p {
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.footer-policies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-item1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .footer-about {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .footer-webletter {
+        margin: 0 auto;
+        width: 70vw;
+    }
+
+    .footer-item2 {
+        margin-top: 1rem;
+        width: 80vw;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .footer-item1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .footer-about {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-webletter {
+        margin: 0 auto;
+        width: 70vw;
+    }
+
+    .footer-item2 {
+        margin-top: 1rem;
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .footer-copyright {
+        gap: 3rem;
+    }
+}

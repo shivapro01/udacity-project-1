@@ -14,13 +14,12 @@
 
 .card {
     width: 30%;
-    height: 500px;
+    height: 520px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,6 +28,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
+    margin-top: 1rem;
 }
 
 .card-text {
@@ -105,12 +105,11 @@
 @media screen and (max-width: 768px) {
     .cards {
         flex-direction: column;
-
     }
 
     .card {
         width: 90%;
-        height: 500px;
+        height: 520px;
     }
 
     .card-heading {
@@ -128,4 +127,3 @@
         font-size: 0.7rem;
     }
 }
-    
